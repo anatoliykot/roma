@@ -158,6 +158,8 @@ h3.title_block{
 	text-shadow: 0 2px 4px #333;
 	letter-spacing: 3px;
 	margin: 0 0 15px;
+	position: relative;
+	z-index: 20;
 }
 /* Clear */
 .list_of_casinos .top_line:after,
