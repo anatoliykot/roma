@@ -161,7 +161,8 @@ h3.title_block{
 }
 /* Clear */
 .list_of_casinos .top_line:after,
-.main:after{
+.main:after,
+.widget_bonus li:after{
 	content: '';
 	clear: both;
 	display: table;
@@ -239,6 +240,9 @@ h3.title_block{
 .main .sidebar{
 	width: 282px;
 	float: left;
+	margin: 50px 0 0;
+	border-right: 1px solid #9e6e9a;
+	border-left: 1px solid #9e6e9a;
 }
 .list_of_machines {
 	margin: 0 0 46px;
@@ -524,4 +528,112 @@ h3.title_block{
 }
 .list_of_casinos .bottom_content p{
 	line-height: 1.3;
+}
+
+/* widget_bonus */
+.widget h3{
+	margin: 0 0 0 5px;
+}
+.widget.widget_bonus ul{
+	margin: 10px 0 0;
+}
+.widget.widget_bonus li{
+	width: 245px;
+	margin: 0 0 5px 23px;
+	background: #000;
+}
+.widget.widget_bonus p{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.widget.widget_bonus p.price{
+	font-size: 28px;
+}
+.widget.widget_bonus li > div{
+	float: left;
+}
+.widget.widget_bonus .logo_casino{
+	width: 75%;
+}
+.widget.widget_bonus .info_bonus{
+	width: 25%;
+	padding: 10px 0 0;
+}
+/* end widget_bonus */
+
+/* widget_newsletter */
+.widget.widget_newsletter{
+	margin: 68px 0 0;
+}
+.widget.widget_newsletter h3{
+	background: #6e396b;
+	color: #fff;
+	font-family: arial;
+	margin: 0 3px;
+	padding: 5px 0 5px 10px;
+}
+.widget.widget_newsletter input{
+	background: #fff;
+	display: block;
+	width: 260px;
+	margin: 21px 10px 0 10px;
+	border-radius: 5px;
+	padding: 11px 5px;	
+	border: 0;
+	box-shadow: none;
+	font-style: normal;
+}
+.widget.widget_newsletter button{
+	margin: 0 auto;
+	padding: 2px 0;
+	border: 0;
+	width: 108px;
+	display: block;
+	border-radius: 0 0 5px 5px;
+	background: #ffbde5;
+	color: #735467;
+	cursor: pointer;
+}
+/* end widget_newsletter */
+
+/* .widget.widget_text */
+.widget.widget_text{
+	margin: 45px 0 0;
+}
+.widget.widget_text h3{
+	background: #6e396b;
+	color: #fff;
+	font-family: arial;
+	margin: 0 3px;
+	padding: 5px 0 5px 10px;	
+}
+.widget.widget_text .top{
+	overflow: hidden;
+}
+.widget.widget_text .block{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	margin: 10px 8px 10px 14px;
+}
+.widget.widget_text .title{
+	float: left;
+}
+.widget.widget_text p{
+	margin: 10px 6px;
+	color: #fff;
+	font-weight: bold;
+}
+.widget.widget_text p.img_center{
+	text-align: center;
+}
+/* end widget_newsletter */
+
+.widget.widget_ads{
+
+}
+.widget.widget_ads h3{
+	
 }
