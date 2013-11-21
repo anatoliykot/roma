@@ -230,7 +230,9 @@ h3.title_block{
 }
 .main{
 	padding: 0 10px;
-	background: url(../images/bg_main_top.png) no-repeat top;
+}
+.main .bg_main_top{
+		background: url(../images/bg_main_top.png) no-repeat top;
 }
 .main .main_content{
 	width: 652px;
