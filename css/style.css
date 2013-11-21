@@ -1,0 +1,345 @@
+/* --------------- Font ------------------*/
+@font-face {
+	font-family: 'mesquitestd';
+    src: url('../fonts/mesquitestd-webfont.eot');
+    src: url('../fonts/mesquitestd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mesquitestd-webfont.woff') format('woff'),
+         url('../fonts/mesquitestd-webfont.ttf') format('truetype'),
+         url('../fonts/mesquitestd-webfont.svg#mesquitestd-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaLT';
+    src: url('../fonts/HelveticaLT.eot');
+    src: url('../fonts/HelveticaLT.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaLT.woff') format('woff'),
+         url('../fonts/HelveticaLT.ttf') format('truetype'),
+         url('../fonts/HelveticaLT.svg#HelveticaLT') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-Medium';
+    src: url('../fonts/HelveticaNeue-Medium.eot');
+    src: url('../fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
+         url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+         url('../fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaneuecyrbold';
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* --------------- Reset ----------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	font-size: 9px;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+html{
+	overflow-y: scroll;
+}
+html,
+body{
+	height: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	background: #000;
+	font-family: HelveticaLT, Arial, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+}
+input[type="text"]{
+	padding: 0 5px;
+}
+select,
+textarea,
+input[type="text"]{
+	height: 18px;
+	font-style: italic;
+	font-size: 11px;
+	margin: 0 0 10px;
+	border: 1px solid #bec0bf;
+	background: #e6e6e6; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U2ZTZlNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #e6e6e6 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e6e6e6 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e6e6e6 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e6e6e6 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e6e6e6 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+	box-shadow: 0 2px 2px #dbdbdb inset;
+}
+h1,
+h3{
+	font-family: 'mesquitestd', 'Times new roman';
+}
+h3{
+	font-size: 30px;
+	color: #ffdcf2;
+	text-shadow: 0 2px 4px #777;
+}
+
+:focus{
+	outline: 0;
+}
+*{
+	 box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box;
+}
+.wrapper{
+	width: 962px;
+	margin: 0 auto;
+	background: #93478e;
+	height: 100%;
+}
+
+.top_header{
+	width: 962px;
+	height: 196px;
+	background: url(../images/bg_header.jpg) no-repeat;
+	padding: 41px 17px 30px;
+	margin: 0 auto;
+	border-left: 1px solid #7b6679;
+	border-right: 1px solid #7d667b;
+	border-bottom: 1px solid #fff;
+}
+.top_header .header_holder{
+	width: 590px;
+	float: right;
+}
+.top_header h1.title_site{
+}
+.top_header .description{
+	font: 13px HelveticaNeue-Medium, Arial, sans-serif;
+	color: #fff;
+}
+header{
+	position: relative;
+}
+header .home_link a{
+	position: absolute;
+	display: block;
+	top: 179px;
+	left: -16px;
+	width: 32px;
+	height: 32px;
+	background: #fff url(../images/sprite.png) no-repeat 5px 5px;
+	border-radius: 50%;
+}
+header nav{
+	text-align: center;
+}
+header ul{
+	margin: 0 0 0 62px;
+}
+header ul li{
+	display: inline-block;
+	margin: 0 4px 0 0;
+}
+header ul li a{
+	color: #333;
+	text-transform: uppercase;
+	font-family: helveticaneuecyrbold, Arial, sans-serif;
+	padding: 9px 0 6px;
+	background: #ffbde5;
+	border-bottom: 3px solid #fff;
+	border-radius: 0 0 3px 3px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 142px;
+}
+
+.main{
+	padding: 0 10px;
+	overflow: hidden;
+	height: 100%;
+}
+.main .main_content{
+	width: 650px;
+	float: left;
+	margin: 0 9px 0 0;
+	height: 100%;
+}
+.main aside{
+	width: 282px;
+	float: left;
+}
+.main_content ul.list_casino li{
+	width: 310px;
+	display: inline-block;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+}
+.main_content li .logo_casino{
+	width: 148px;
+	background: #111;
+	position: absolute;
+	height: 59px;
+	text-align: center;
+	padding: 5px 0 0;
+	top: -7px;
+	left: -5px;
+	border-radius: 4px;
+}
+.main_content li .logo_casino img{
+	max-width: 128px;
+	display: inline-block;
+}
+.main_content li .os_rating {
+	padding: 9px 0;
+	overflow: hidden;
+	margin: 0 0 23px 0;
+}
+.main_content li .os_rating ul{
+	float: right;
+}
+.main_content li .os_rating ul li{
+	float: left;
+	background: url('../images/sprite.png') no-repeat;
+}
+.main_content li ul.os li{
+	width: 20px;
+	height: 23px;
+} 
+.main_content li ul.os li.window_icon{
+	background-position: -33px 0;
+}
+.main_content li ul.os li.mac{
+	background-position: -65px 0;
+}
+
+.main_content li ul.rating {
+	width: 98px;
+	height: 27px;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	margin: 0 3px 0 15px;
+	padding: 5px 7px 0 9px;
+}
+.main_content li ul.rating li{
+	background-position: -1px -48px;
+	width: 15px;
+	height: 16px;
+	cursor: pointer;
+	margin: 0 1px 0 0;
+}
+.main_content li ul.rating li.active{
+	background-position: -1px -26px;
+}
+.main_content li .content_list-casino {
+	position: relative;
+}
+.main_content li .content_list-casino .img_casino{
+	margin: 0 auto;
+	height: 184px;
+	width: 273px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main_content li .content_list-casino .img_casino img{
+	height: 100%;
+	max-width: 100%;
+	display: inline-block;
+}
+.main_content li .content_list-casino .bonus_casino{
+	width: 136px;
+	height: 136px;
+	position: absolute;
+	top: 30px;
+	right: 5px;
+}
+.main_content li .content_list-casino .bonus_casino:after{
+	content: '';
+	position: absolute;
+	background: url(../images/bonus_bg.png) no-repeat;
+	width: 136px;
+	height: 136px;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.main_content li .content_list-casino .bonus_casino .shadow_bonus{
+	position: absolute;
+	background: url(../images/bonus_shadow.png) no-repeat;
+	width: 227px;
+	height: 139px;
+	top: 0;
+	left: 5px;
+	z-index: 0;
+}
