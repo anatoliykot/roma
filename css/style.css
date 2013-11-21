@@ -240,6 +240,9 @@ h3.title_block{
 	width: 282px;
 	float: left;
 }
+.list_of_machines {
+	margin: 0 0 46px;
+}
 .list_of_machines ul.list_machines{
 	background: #fff url(../images/bg_top_content.png) repeat-x top;
 	text-align: center;
@@ -474,6 +477,8 @@ h3.title_block{
 }
 .list_of_casinos div.bonus p.price{
 	font-size: 28px;
+	font-weight: bold;
+	line-height: 25px;
 }
 .list_of_casinos div.offre_casino{
 	width: 90px;
