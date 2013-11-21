@@ -170,7 +170,7 @@ h3.title_block{
 .wrapper{
 	width: 962px;
 	margin: 0 auto;
-	background: #93478e;
+	background: #8f478b;
 }
 .top_header{
 	width: 962px;
@@ -230,11 +230,12 @@ h3.title_block{
 }
 .main{
 	padding: 0 10px;
+	background: url(../images/bg_main_top.png) no-repeat top;
 }
 .main .main_content{
-	width: 650px;
+	width: 652px;
 	float: left;
-	margin: 50px 9px 0 0;
+	margin: 50px 6px 0 0;
 }
 .main .sidebar{
 	width: 282px;
@@ -242,6 +243,18 @@ h3.title_block{
 }
 .list_of_machines {
 	margin: 0 0 46px;
+	position: relative;
+	border: 1px solid #fff;
+	border-top: none;
+}
+.list_of_machines .bg_list_machine{
+	position: absolute;
+	z-index: 1;
+	background: url(../images/bg_content_bottom.png) repeat-x;
+	height: 126px;
+	width: 650px;
+	bottom: 0;
+	left: 0;
 }
 .list_of_machines ul.list_machines{
 	background: #fff url(../images/bg_top_content.png) repeat-x top;
@@ -256,6 +269,7 @@ h3.title_block{
 	margin: 0 3px 30px;
 	box-shadow: 0 2px 5px #7C7C7C;
 	text-align: left;
+	z-index: 2;
 }
 .list_of_machines li .logo_casino{
 	width: 148px;
