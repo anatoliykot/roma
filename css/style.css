@@ -239,14 +239,14 @@ h3{
 	width: 282px;
 	float: left;
 }
-.list_of_machines ul.list_casino li{
+.list_of_machines ul.list_machines li{
 	width: 310px;
 	display: inline-block;
 	background: #fff;
 	border-radius: 5px;
 	position: relative;
 }
-.list_of_machines li .logo_casino{
+.list_of_machines li .logo_machines{
 	width: 148px;
 	background: #111;
 	position: absolute;
@@ -257,7 +257,7 @@ h3{
 	left: -5px;
 	border-radius: 4px;
 }
-.list_of_machines li .logo_casino img{
+.list_of_machines li .logo_machines img{
 	max-width: 128px;
 	display: inline-block;
 }
@@ -302,29 +302,29 @@ h3{
 .list_of_machines li ul.rating li.active{
 	background-position: -1px -26px;
 }
-.list_of_machines li .content_list_casino {
+.list_of_machines li .content_list_machines {
 	position: relative;
 }
-.list_of_machines li .content_list_casino .img_casino{
+.list_of_machines li .content_list_machines .img_casino{
 	margin: 0 auto;
 	height: 184px;
 	width: 273px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-.list_of_machines li .content_list-casino .img_casino img{
+.list_of_machines li .content_list_machines .img_casino img{
 	height: 100%;
 	max-width: 100%;
 	display: inline-block;
 }
-.list_of_machines li .content_list_casino .bonus_casino{
+.list_of_machines li .content_list_machines .bonus_casino{
 	width: 136px;
 	height: 136px;
 	position: absolute;
-	top: 30px;
-	right: 5px;
+	top: 42px;
+	right: 6px;
 }
-.list_of_machines li .content_list_casino .bonus_casino:after{
+.list_of_machines li .content_list_machines .bonus_casino .bonus_info{
 	content: '';
 	position: absolute;
 	background: url(../images/bonus_bg.png) no-repeat;
@@ -333,13 +333,31 @@ h3{
 	top: 0;
 	left: 0;
 	display: block;
+	text-align: center;
+	padding: 20px 0 0;
 }
-.list_of_machines li .content_list_casino .bonus_casino .shadow_bonus{
+.list_of_machines li .content_list_machines .bonus_casino .shadow_bonus{
 	position: absolute;
 	background: url(../images/bonus_shadow.png) no-repeat;
 	width: 227px;
 	height: 139px;
-	top: 0;
-	left: 5px;
+	right: 7px;
+	bottom: 39px;
 	z-index: 0;
+}
+.list_of_machines li .content_list_machines .bonus_casino p{
+	color: #fff;
+	font-size: 18px;
+	font-family: helveticaneuecyrbold, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 0 0 0 7px;
+}
+.list_of_machines li .content_list_machines .bonus_casino p.price{
+	font-size: 48px;
+	line-height: 1;
+}
+.list_of_machines li .content_list_machines .bonus_casino p.price sup{
+	bottom: 0.6ex;
+	font-size: 32px;
+	font-weight: bold;
 }
