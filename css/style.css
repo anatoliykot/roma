@@ -149,6 +149,9 @@ h1,
 h3{
 	font-family: 'mesquitestd', 'Times new roman';
 }
+:focus{
+	outline: 0;
+}
 h3.title_block{
 	font-size: 28px;
 	color: #ffdcf2;
@@ -156,14 +159,18 @@ h3.title_block{
 	letter-spacing: 3px;
 	margin: 0 0 15px;
 }
-:focus{
-	outline: 0;
+/* Clear */
+.list_of_casinos .top_line:after,
+.main:after{
+	content: '';
+	clear: both;
+	display: table;
 }
+/* ===== */
 .wrapper{
 	width: 962px;
 	margin: 0 auto;
 	background: #93478e;
-	height: 100%;
 }
 .top_header{
 	width: 962px;
@@ -221,16 +228,13 @@ h3.title_block{
 	text-align: center;
 	width: 142px;
 }
-
 .main{
 	padding: 0 10px;
-	height: 100%;
 }
 .main .main_content{
 	width: 650px;
 	float: left;
 	margin: 50px 9px 0 0;
-	height: 100%;
 }
 .main .sidebar{
 	width: 282px;
@@ -434,11 +438,6 @@ h3.title_block{
 .list_of_casinos .top_line{
 	height: 62px;
 	border-bottom: 1px solid #9e6e9a;
-}
-.list_of_casinos .top_line:after{
-	content: '';
-	clear: both;
-	display: table;
 }
 .list_of_casinos .top_line > div{
 	float: left;
