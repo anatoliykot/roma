@@ -195,6 +195,7 @@ h3.title_block{
 }
 .header{
 	position: relative;
+	z-index: 2;
 }
 .header .home_link a{
 	position: absolute;
@@ -205,6 +206,7 @@ h3.title_block{
 	height: 32px;
 	background: #fff url(../images/sprite.png) no-repeat 5px 5px;
 	border-radius: 50%;
+	z-index: 2;
 }
 .header .nav{
 	text-align: center;
@@ -231,9 +233,15 @@ h3.title_block{
 }
 .main{
 	padding: 0 10px;
+	position: relative;
 }
 .main .bg_main_top{
-		background: url(../images/bg_main_top.png) no-repeat top;
+	background: url(../images/bg_main_top.png) no-repeat top;
+	position: absolute;
+	top: -50px;
+	left: 0;
+	height: 565px;
+	width: 960px;
 }
 .main .main_content{
 	width: 652px;
@@ -250,8 +258,6 @@ h3.title_block{
 .list_of_machines {
 	margin: 0 0 46px;
 	position: relative;
-	border: 1px solid #fff;
-	border-top: none;
 }
 .list_of_machines .bg_list_machine{
 	position: absolute;
@@ -263,7 +269,7 @@ h3.title_block{
 	left: 0;
 }
 .list_of_machines ul.list_machines{
-	background: #fff url(../images/bg_top_content.png) repeat-x top;
+	/*background: #fff url(../images/bg_top_content.png) repeat-x top;*/
 	text-align: center;
 }
 .list_of_machines ul.list_machines > li{
